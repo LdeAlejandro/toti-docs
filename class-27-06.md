@@ -1,9 +1,9 @@
-Claro! Vamos expandir a documentação do `README.md` com mais detalhes sobre cada parte do código HTML, explicando o propósito de cada tag, atributo e linha:
 
-```markdown
-# Formulário de Cadastro
 
-Este é um exemplo de um formulário de cadastro simples em HTML.
+
+# Formulário de Cadastro com Tabela de Cidades
+
+Este é um exemplo de um formulário de cadastro simples em HTML, incluindo uma tabela de cidades e estados.
 
 ## Estrutura do Documento HTML
 
@@ -34,26 +34,31 @@ Este é um exemplo de um formulário de cadastro simples em HTML.
     <textarea name="doencasdefamilia"></textarea><br>
     <br>
 
-    <!-- Checkbox para Fumante -->
+    <!-- Caixa de Seleção (Checkbox) -->
     Fuma: <input type="checkbox" value="fuma" name="smoker"/><br>
-
-    <!-- Checkbox para Bebedor -->
     Bebe: <input type="checkbox" value="bebe" name="drinker"/><br>
     <br>
 
-    <!-- Radiobutton para Seleção de Sexo -->
+    <!-- Botões de Opção (Radiobutton) -->
     Sexo: <br>
     <input type="radio" value="femenino" name="sexo"/>feminino<br>
     <input type="radio" value="masculino" name="sexo"/>masculino<br>
     <br>
 
-    <!-- Botão para Limpar o Formulário -->
-    <input type="reset" value="Limpar" name="reset"/>
-
-    <!-- Botão para Enviar o Formulário -->
+    <!-- Botões -->
+    <input type="reset" value="clean" name="reset"/>
     <input type="submit" value="Enviar" name="submitform"/><br>
 
 </form>
+
+<br><br>
+
+<!-- Tabela de Cidades e Estados -->
+<table border="1">
+    <tr><th>Estado</th><th>Cidade</th></tr>
+    <tr><td>Pernambuco</td><td>Recife</td></tr>
+    <tr><td>Paraíba</td><td>Santa Rita</td></tr>
+</table>
 
 </body>
 </html>
@@ -74,7 +79,10 @@ Contém metadados do documento, como informações sobre a codificação de cara
 - `<title>Site = Toters WebSite</title>`: Define o título da página exibido na aba do navegador.
 
 ### `<body>`
-Contém o conteúdo visível da página, como texto, imagens e formulários.
+Contém o conteúdo visível da página, como texto, imagens, formulários e tabelas.
+
+#### Cabeçalho (`<h1>`)
+- `<h1>Formulário de Cadastro</h1>`: Título principal da página.
 
 #### Formulário (`<form>`)
 
@@ -100,9 +108,23 @@ Define um formulário que, quando enviado, envia os dados para o arquivo `proces
 
 #### Botões (`<input type="reset">`, `<input type="submit">`)
 
-- `<input type="reset" value="Limpar" name="reset"/>`: Botão para limpar todos os campos do formulário.
+- `<input type="reset" value="clean" name="reset"/>`: Botão para limpar todos os campos do formulário.
 - `<input type="submit" value="Enviar" name="submitform"/>`: Botão para enviar os dados preenchidos no formulário para processamento.
 
-### Conclusão
+#### Tabela (`<table>`)
 
-Este formulário HTML básico permite aos usuários inserir informações pessoais como nome, telefone, data de nascimento, histórico de doenças familiares, hábitos de fumar e beber, e selecionar seu sexo antes de enviar os dados para processamento.
+- `<table border="1">`: Cria uma tabela com bordas de espessura 1.
+- `<tr>`: Define uma linha na tabela.
+- `<th>`: Define uma célula de cabeçalho em uma tabela.
+- `<td>`: Define uma célula de dados em uma tabela.
+
+##### Cabeçalho da Tabela
+- `<tr><th>Estado</th><th>Cidade</th></tr>`: Cria a linha de cabeçalho da tabela com duas colunas: "Estado" e "Cidade".
+
+##### Linhas da Tabela
+- `<tr><td>Pernambuco</td><td>Recife</td></tr>`: Cria uma linha na tabela com os dados "Pernambuco" e "Recife".
+- `<tr><td>Paraíba</td><td>Santa Rita</td></tr>`: Cria uma linha na tabela com os dados "Paraíba" e "Santa Rita".
+
+### Resumo
+
+Este código HTML cria uma página da web com um formulário de cadastro e uma tabela. O formulário permite aos usuários inserir informações como nome, telefone, data de nascimento, histórico de doenças familiares, hábitos de fumar e beber, e selecionar seu sexo. Além disso, a página inclui uma tabela que lista estados e suas respectivas cidades.
