@@ -1,46 +1,7 @@
 
-```html
-
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset = "utf-8"/>
-    <title> Site = Toters WebSite</title>
-</head>
-<body>
-
-    <h1>Formulario de Cadastro</h1>
-        <form action="processa.php">
-
-            Nome: <br><input type="text" name="name" maxlength="50" /><br>
-            Telefone: <br><input type="tel" name ="phone"/><br>
-            Data de nascimento: <br><input type="date" name="birthdate"/><br>
-            Doenças de familia: <br>
-            <textarea  name="doencasdefamilia"></textarea><br>
-            <br>
-            Fuma: <input type="checkbox" value="fuma" name="smoker"/><br>
-            Bebe: <input type="checkbox" value="bebe" name="drinker"/><br>
-            <br>
-            Sexo: <br>
-            <input type="radio" value="femenino" name="sexo"/>femenino<br>
-            <input type="radio" value="masculino" name="sexo"/>masculino<br>
-            <br>
-            <input type="reset" value="clean" name="reset"/>
-            
-            <input type="submit" value="Enviar" name="submitform"/><br>
-
-            
-        </form>
-   
-</body>
-</html>
+Código da classe
 
 
-```
-
-
-
-```markdown
 # Formulário de Cadastro
 
 Este é um exemplo de um formulário de cadastro simples em HTML.
