@@ -170,7 +170,6 @@ Define um formulário que, quando enviado, envia os dados para o arquivo `proces
    - **Descrição**: Cria um botão que envia os dados do formulário para o servidor para processamento.
    - **Exemplo**: `<input type="submit" value="Enviar" name="submitform"/>`
 
-### Resumo
 
 Cada tipo de entrada (`type`) no código HTML serve a um propósito específico no formulário de cadastro:
 
