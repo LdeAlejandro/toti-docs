@@ -124,6 +124,113 @@ Define um formulário que, quando enviado, envia os dados para o arquivo `proces
 ##### Linhas da Tabela
 - `<tr><td>Pernambuco</td><td>Recife</td></tr>`: Cria uma linha na tabela com os dados "Pernambuco" e "Recife".
 - `<tr><td>Paraíba</td><td>Santa Rita</td></tr>`: Cria uma linha na tabela com os dados "Paraíba" e "Santa Rita".
+- 
+
+Claro! Vamos detalhar cada tipo de entrada (`type`) usado no código HTML fornecido:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Site = Toters WebSite</title>
+</head>
+<body>
+
+<h1>Formulário de Cadastro</h1>
+
+<form action="processa.php">
+
+    <!-- Campo de Texto -->
+    Nome: <br><input type="text" name="name" maxlength="50" /><br>
+
+    <!-- Campo de Telefone -->
+    Telefone: <br><input type="tel" name="phone"/><br>
+
+    <!-- Campo de Data -->
+    Data de nascimento: <br><input type="date" name="birthdate"/><br>
+
+    <!-- Área de Texto -->
+    Doenças de família: <br>
+    <textarea name="doencasdefamilia"></textarea><br>
+    <br>
+
+    <!-- Caixa de Seleção (Checkbox) -->
+    Fuma: <input type="checkbox" value="fuma" name="smoker"/><br>
+    Bebe: <input type="checkbox" value="bebe" name="drinker"/><br>
+    <br>
+
+    <!-- Botões de Opção (Radiobutton) -->
+    Sexo: <br>
+    <input type="radio" value="femenino" name="sexo"/>feminino<br>
+    <input type="radio" value="masculino" name="sexo"/>masculino<br>
+    <br>
+
+    <!-- Botões -->
+    <input type="reset" value="Limpar" name="reset"/>
+    <input type="submit" value="Enviar" name="submitform"/><br>
+
+</form>
+
+</body>
+</html>
+```
+
+### Explicação dos Tipos de Entrada (`type`)
+
+1. **`type="text"`**: 
+   - **Descrição**: Cria um campo de texto simples onde os usuários podem inserir texto livre.
+   - **Exemplo**: `<input type="text" name="name" maxlength="50" />`
+
+2. **`type="tel"`**:
+   - **Descrição**: Campo de entrada otimizado para números de telefone.
+   - **Exemplo**: `<input type="tel" name="phone"/>`
+
+3. **`type="date"`**:
+   - **Descrição**: Permite aos usuários selecionar uma data de um calendário interativo.
+   - **Exemplo**: `<input type="date" name="birthdate"/>`
+
+4. **`<textarea>`**:
+   - **Descrição**: Cria uma área de texto multi-linha onde os usuários podem inserir texto extenso.
+   - **Exemplo**: `<textarea name="doencasdefamilia"></textarea>`
+
+5. **`type="checkbox"`**:
+   - **Descrição**: Cria uma caixa de seleção que pode ser marcada ou desmarcada independentemente de outras caixas de seleção.
+   - **Exemplo**: 
+     ```html
+     Fuma: <input type="checkbox" value="fuma" name="smoker"/><br>
+     Bebe: <input type="checkbox" value="bebe" name="drinker"/><br>
+     ```
+
+6. **`type="radio"`**:
+   - **Descrição**: Cria um botão de opção que permite aos usuários selecionar uma opção de um conjunto de opções mutuamente exclusivas.
+   - **Atributos**: Deve ter o atributo `name` com o mesmo valor para todos os botões de rádio que pertencem ao mesmo grupo.
+   - **Exemplo**: 
+     ```html
+     Sexo: <br>
+     <input type="radio" value="femenino" name="sexo"/>feminino<br>
+     <input type="radio" value="masculino" name="sexo"/>masculino<br>
+     ```
+
+7. **`type="reset"`**:
+   - **Descrição**: Cria um botão que limpa os campos do formulário, restaurando os valores padrão.
+   - **Exemplo**: `<input type="reset" value="Limpar" name="reset"/>`
+
+8. **`type="submit"`**:
+   - **Descrição**: Cria um botão que envia os dados do formulário para o servidor para processamento.
+   - **Exemplo**: `<input type="submit" value="Enviar" name="submitform"/>`
+
+### Resumo
+
+Cada tipo de entrada (`type`) no código HTML serve a um propósito específico no formulário de cadastro:
+
+- **Campos de Entrada**: `text`, `tel`, `date`
+- **Área de Texto**: `textarea`
+- **Caixas de Seleção**: `checkbox`
+- **Botões de Opção**: `radio`
+- **Botões**: `reset`, `submit`
+
+Esses elementos formam a estrutura básica para coletar informações do usuário de forma interativa em um site ou aplicação web.
 
 ### Resumo
 
